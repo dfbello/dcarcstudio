@@ -1,9 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@plugin "daisyui" {
+  themes: architect --default;
+}
+
+@theme {
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+@plugin "daisyui/theme" {
+  name: architect;
+  default: true;
+  color-scheme: dark;
+  --color-primary: #7FA5C7;
+  --color-primary-content: #1a1d23;
+  --color-secondary: #4a6d8c;
+  --color-accent: #7FA5C7;
+  --color-neutral: #252930;
+  --color-base-100: #1a1d23;
+  --color-base-200: #1e2128;
+  --color-base-300: #252930;
+  --color-base-content: #e8f1f8;
+}
 
 @layer base {
   html {
@@ -34,7 +55,7 @@
 #cursor {
   width: 12px;
   height: 12px;
-  background: #E8D5B0;
+  background: var(--color-primary);
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -93,7 +114,7 @@ body::after {
   left: 0;
   width: 0;
   height: 1px;
-  background: #E8D5B0;
+  background: var(--color-primary);
   transition: width 0.3s ease;
 }
 
