@@ -61,7 +61,7 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 9999999;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
   mix-blend-mode: difference;
@@ -127,4 +127,25 @@ body::after {
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.05em;
   line-height: 1;
+}
+
+.gslide-description {
+  background: var(--color-primary-content) !important;
+}
+
+.gslide-title {
+  font-family: 'Bebas Neue', sans-serif !important;
+  letter-spacing: 0.1em !important;
+  color: var(--color-base-content) !important;
+  font-size: 1.8rem !important;
+}
+
+.gslide-desc {
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 300 !important;
+  color: var(--color-base-content) !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.3em !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
 }

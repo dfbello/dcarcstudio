@@ -12,6 +12,8 @@
 		<meta property="og:url" content="https://tu-dominio.com" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<script src="https://unpkg.com/lucide@latest"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 	</head>
 	<body class="overflow-x-hidden">
 
@@ -116,8 +118,8 @@
 
 						<div class="flex items-end justify-between mb-16">
 							<div>
-								<p class="section-label mb-3 fade-up">Selected Work</p>
-								<h2 class="display-text text-6xl md:text-8xl text-base-content fade-up" style="transition-delay:0.1s">PROJECTS</h2>
+								<p class="section-label mb-3 fade-up">Trabajo Seleccionado</p>
+								<h2 class="display-text text-6xl md:text-8xl text-base-content fade-up" style="transition-delay:0.1s">PROYECTOS</h2>
 							</div>
 							<a href="#" class="hidden md:block section-label text-base-content/40 hover:text-primary transition-colors fade-up">View All →</a>
 						</div>
@@ -149,6 +151,42 @@
 									</div>
 								</div>
 
+<div class="project-card group relative flex-shrink-0 w-72 md:w-96 h-[520px] bg-base-200 overflow-hidden fade-up">
+  <!-- Card background image - visible thumbnail -->
+  <img src="/images/cadena-middle.png" alt="Casa Meridian" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+  <div class="absolute inset-0 bg-gradient-to-t from-base-100 via-transparent to-transparent"></div>
+
+  <!-- First image opens the lightbox, same as card background -->
+  <a class="glightbox absolute inset-0 z-10"
+     href="/images/cadena-default.png"
+     data-gallery="cadena"
+     data-title="Casa Meridian"
+     data-description="Residencia privada, Barcelona · 2023">
+  </a>
+
+  <!-- Additional project images, hidden from the card view -->
+  <a class="glightbox hidden"
+     href="/images/cadena-right.png"
+     data-gallery="cadena"
+     data-title="Casa Meridian"
+     data-description="Vista interior">
+  </a>
+  <a class="glightbox hidden"
+     href="/images/cadena-left.png"
+     data-gallery="cadena"
+     data-title="Casa Meridian"
+     data-description="Vista exterior nocturna">
+  </a>
+
+  <!-- Text overlay -->
+  <div class="absolute bottom-0 left-0 right-0 p-8 z-20">
+    <p class="section-label text-primary mb-2">Todo lo Rico · 2023</p>
+    <h3 class="display-text text-3xl">Y este lindo?</h3>
+    <p class="font-body text-base-content/50 text-sm mt-2 font-light">Secret location Fusayork</p>
+  </div>
+</div>
+
+
 								<!-- Project Card 3 -->
 								<div class="project-card group relative flex-shrink-0 w-72 md:w-[480px] h-[540px] bg-base-200 overflow-hidden fade-up" style="transition-delay:0.2s">
 									<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-base-100 group-hover:scale-105 transition-transform duration-700"></div>
@@ -170,10 +208,31 @@
 										<p class="font-body text-base-content/50 text-sm mt-2 font-light">Countryside estate, Porto</p>
 									</div>
 								</div>
+<div class="project-card group relative flex-shrink-0 w-72 md:w-96 h-[520px] bg-base-200 overflow-hidden fade-up">
+  <!-- Real image -->
+  <img src="/images/cadena-left.png" alt="Casa Meridian" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+  <!-- Gradient overlay so bottom text remains readable -->
+  <div class="absolute inset-0 bg-gradient-to-t from-base-100 via-transparent to-transparent"></div>
+  <!-- GLightbox anchor -->
+  <a class="glightbox absolute inset-0 z-10"
+     href="/images/cadena-right.png"
+     data-title="Casa Meridian"
+     data-gallery="hola"
+     data-description="Resiprivada, Barcelona · 2023 bueno bueno bueno chicos bienvenidos a un nuevo video de gta5 online, en el dia de hoy vengo a una larga de camajito y otra que ha creado pandiiiiita" data-desc-position="right"
+     data-effect="fade"
+     data-zoomable="true">
+  </a>
+  <!-- Text overlay -->
+  <div class="absolute bottom-0 left-0 right-0 p-8 z-20">
+    <p class="section-label text-primary mb-2">Residencial · 2023</p>
+    <h3 class="display-text text-3xl">Casa Meridian</h3>
+    <p class="font-body text-base-content/50 text-sm mt-2 font-light">Residencia privada, Barcelona</p>
+  </div>
+</div>
 
 							</div>
 						</div>
-						<p class="section-label text-base-content/20 mt-4 fade-up">← Drag to explore →</p>
+						<p class="section-label text-base-content/20 mt-4 fade-up">← Desliza para ver más →</p>
 					</section>
 
 
@@ -207,7 +266,7 @@
 										Diego Cadena es un arquitecto establecido en la cuidad de Fusagasugá, su trayectoria artística no se limita a crear espacios que sobresalen. De día arquitecto, de noche lider de un grupo musical. Además, se rumorea que la picha le mide 30cm. Escondan a su mujer.
 										</p>
 										<p>
-										Graduado de la Universidad Piloto de Colombia y con trayectoria dentro del mercado fusagasugueño y del Sumapaz, Diego es el arquitecto más rico que usted puede encontrar para el desarrollo de sus proyectos. Se dice que nunca se le ha visto en la misma sala que Le Corbusier, conjeturas que nos incitan a pensar en con quién estamos tratando.
+										Graduado de la Universidad Piloto de Colombia y con trayectoria dentro del mercado fusagasugueño y del Sumapaz, Diego es el arquitecto más rico que usted puede encontrar para el desarrollo de sus proyectos. Nunca se le ha visto en la misma sala que Le Corbusier, conjeturas que nos incitan a reflexionar con quién estamos tratando.
 										</p>
 									</div>
 									<div class="mt-10 flex gap-8 fade-up" style="transition-delay:0.3s">

@@ -73,3 +73,5 @@ if (slider) {
     slider.scrollLeft = scrollLeft - walk
   })
 }
+
+const lightbox = GLightbox({ selector: '.glightbox' });
