@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="architect">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIEGO CADENA ESTUDIO DE ARQUITECTURA</title>
+  <meta name="description" content="Tu descripción aquí — una o dos frases sobre el estudio, máximo 160 caracteres." />
+  <meta name="author" content="Nombre del arquitecto" />
+  <meta property="og:title" content="Studio Varga — Arquitectura" />
+  <meta property="og:description" content="La misma descripción que arriba." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tu-dominio.com" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body class="overflow-x-hidden">
+
+	<!-- Custom Cursor -->
+	<div id="cursor"></div>
+
+	<!-- ═══════════════════════════════════════
+		NAVBAR
+		════════════════════════════════════════ -->
+		<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-base-100/40 backdrop-blur-md transition-transform duration-300">
+			<div class="flex items-center justify-between px-8 py-6">
+
+				<!-- Logo -->
+				<a href="#" class="font-display text-2xl tracking-widest text-primary">Diego Cadena Architecture Studio (LOGO)</a>
+
+				<!-- Desktop Nav -->
+				<ul class="hidden md:flex items-center gap-10 section-label">
+					<li><a href="#work" class="nav-link hover:text-primary transition-colors">Work</a></li>
+					<li><a href="#about" class="nav-link hover:text-primary transition-colors">About</a></li>
+					<li><a href="#services" class="nav-link hover:text-primary transition-colors">Services</a></li>
+					<li><a href="#contact" class="nav-link hover:text-primary transition-colors">Contact</a></li>
+				</ul>
+
+				<!-- CTA -->
+				<a href="#contact" class="flex items-center justify-center py-2 px-6 hidden md:block btn btn-sm rounded-none border border-primary bg-transparent text-primary hover:bg-primary hover:text-base-100 transition-all section-label">
+					Start a Project
+				</a>
+
+				<!-- Mobile menu button -->
+				<button id="menu-btn" class="md:hidden text-base-content">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+
+			</div>
+
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="hidden md:hidden bg-base-200 border-t border-base-300 px-8 py-6 flex flex-col gap-6 section-label">
+				<a href="#work" class="hover:text-primary transition-colors">Work</a>
+				<a href="#about" class="hover:text-primary transition-colors">About</a>
+				<a href="#services" class="hover:text-primary transition-colors">Services</a>
+				<a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+			</div>
+		</nav>
+
+
+		<!-- ═══════════════════════════════════════
+			HERO
+			════════════════════════════════════════ -->
+			<section class="relative min-h-screen flex flex-col justify-end pb-20 pt-24 px-8 md:px-16 overflow-hidden">
+
+				<!-- Background image placeholder with overlay -->
+				<div class="absolute inset-0 bg-base-100">
+					<!-- Replace this div with an <img> tag when you have a real photo -->
+					<div class="w-full h-full bg-gradient-to-br from-base-300 via-base-100 to-base-200 opacity-60"></div>
+					<!-- Uncomment and use when ready:
+						<img src="/images/hero.jpg" alt="Featured project" class="w-full h-full object-cover opacity-40" />
+					-->
+				</div>
+
+				<!-- Decorative vertical line -->
+				<div class="absolute left-8 md:left-16 top-0 bottom-0 w-px bg-base-300 opacity-40"></div>
+
+				<!-- Hero content -->
+				<div class="relative z-10 max-w-6xl">
+					<h1 class="display-text text-[clamp(4rem,12vw,11rem)] text-base-content mb-8 fade-up" style="transition-delay: 0.1s">
+						SPACE<br/>
+						<span class="text-primary">DEFINES</span><br/>
+						PURPOSE
+					</h1>
+					<div class="flex flex-col md:flex-row items-start md:items-end gap-8 md:gap-16 fade-up" style="transition-delay: 0.2s">
+						<p class="font-body text-base-content/60 max-w-sm font-light leading-relaxed">
+						We design buildings that speak before you enter them. Architecture as statement, structure as poetry.
+						</p>
+						<a href="#work" class="btn rounded-none bg-primary text-base-100 hover:bg-accent border-none px-10 py-4 h-auto section-label tracking-widest">
+							View Work ↓
+						</a>
+					</div>
+				</div>
+
+				<!-- Stats bar -->
+				<div class="relative z-10 mt-20 pt-8 border-t border-base-300 grid grid-cols-3 gap-8 max-w-2xl">
+					<div class="fade-up" style="transition-delay: 0.3s">
+						<div class="stat-number text-5xl text-primary">47</div>
+						<div class="section-label mt-1 text-base-content/50">Projects Built</div>
+					</div>
+					<div class="fade-up" style="transition-delay: 0.4s">
+						<div class="stat-number text-5xl text-primary">16</div>
+						<div class="section-label mt-1 text-base-content/50">Years Active</div>
+					</div>
+					<div class="fade-up" style="transition-delay: 0.5s">
+						<div class="stat-number text-5xl text-primary">8</div>
+						<div class="section-label mt-1 text-base-content/50">Awards Won</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- ═══════════════════════════════════════
+				WORK / PROJECTS
+				════════════════════════════════════════ -->
+				<section id="work" class="py-24 px-8 md:px-16">
+
+					<div class="flex items-end justify-between mb-16">
+						<div>
+							<p class="section-label mb-3 fade-up">Selected Work</p>
+							<h2 class="display-text text-6xl md:text-8xl text-base-content fade-up" style="transition-delay:0.1s">PROJECTS</h2>
+						</div>
+						<a href="#" class="hidden md:block section-label text-base-content/40 hover:text-primary transition-colors fade-up">View All →</a>
+					</div>
+
+					<!-- Horizontally scrollable cards -->
+					<div id="projects-slider" class="overflow-x-auto pb-8 cursor-grab select-none" style="-webkit-overflow-scrolling: touch; scrollbar-width: none;">
+						<div class="projects-track">
+
+							<!-- Project Card 1 - tall -->
+							<div class="project-card group relative flex-shrink-0 w-72 md:w-96 h-[520px] bg-base-200 overflow-hidden fade-up">
+								<!-- Replace bg-gradient with an actual project image -->
+								<div class="absolute inset-0 bg-gradient-to-b from-base-300 to-base-100 group-hover:scale-105 transition-transform duration-700"></div>
+								<div class="absolute inset-0 bg-gradient-to-t from-base-100 via-transparent to-transparent"></div>
+								<div class="absolute bottom-0 left-0 right-0 p-8">
+									<p class="section-label text-primary mb-2">Residential · 2023</p>
+									<h3 class="display-text text-3xl">Casa Meridian</h3>
+									<p class="font-body text-base-content/50 text-sm mt-2 font-light">Private residence, Barcelona</p>
+								</div>
+							</div>
+
+							<!-- Project Card 2 - shorter offset -->
+							<div class="project-card group relative flex-shrink-0 w-72 md:w-80 h-[420px] bg-base-200 overflow-hidden fade-up mt-20" style="transition-delay:0.1s">
+								<div class="absolute inset-0 bg-gradient-to-b from-secondary/20 to-base-100 group-hover:scale-105 transition-transform duration-700"></div>
+								<div class="absolute inset-0 bg-gradient-to-t from-base-100 via-transparent to-transparent"></div>
+								<div class="absolute bottom-0 left-0 right-0 p-8">
+									<p class="section-label text-primary mb-2">Cultural · 2022</p>
+									<h3 class="display-text text-3xl">Pavilion 7</h3>
+									<p class="font-body text-base-content/50 text-sm mt-2 font-light">Arts center, Lisbon</p>
+								</div>
+							</div>
+
+							<!-- Project Card 3 -->
+							<div class="project-card group relative flex-shrink-0 w-72 md:w-[480px] h-[540px] bg-base-200 overflow-hidden fade-up" style="transition-delay:0.2s">
+								<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-base-100 group-hover:scale-105 transition-transform duration-700"></div>
+								<div class="absolute inset-0 bg-gradient-to-t from-base-100 via-transparent to-transparent"></div>
+								<div class="absolute bottom-0 left-0 right-0 p-8">
+									<p class="section-label text-primary mb-2">Commercial · 2023</p>
+									<h3 class="display-text text-3xl">Tower Noir</h3>
+									<p class="font-body text-base-content/50 text-sm mt-2 font-light">Office complex, Madrid</p>
+								</div>
+							</div>
+
+							<!-- Project Card 4 -->
+							<div class="project-card group relative flex-shrink-0 w-72 md:w-80 h-[460px] bg-base-200 overflow-hidden fade-up mt-12" style="transition-delay:0.3s">
+								<div class="absolute inset-0 bg-gradient-to-t from-base-300 to-base-200 group-hover:scale-105 transition-transform duration-700"></div>
+								<div class="absolute inset-0 bg-gradient-to-t from-base-100 via-transparent to-transparent"></div>
+								<div class="absolute bottom-0 left-0 right-0 p-8">
+									<p class="section-label text-primary mb-2">Residential · 2021</p>
+									<h3 class="display-text text-3xl">Villa Calma</h3>
+									<p class="font-body text-base-content/50 text-sm mt-2 font-light">Countryside estate, Porto</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<p class="section-label text-base-content/20 mt-4 fade-up">← Drag to explore →</p>
+				</section>
+
+
+				<!-- ═══════════════════════════════════════
+					ABOUT
+					════════════════════════════════════════ -->
+					<section id="about" class="py-24 px-8 md:px-16 border-t border-base-300">
+						<div class="grid md:grid-cols-2 gap-16 md:gap-32 items-center">
+
+							<!-- Left: image placeholder -->
+							<div class="relative fade-up">
+								<div class="aspect-[3/4] bg-base-200 w-full max-w-md">
+									<!-- Replace with actual portrait: <img src="/images/portrait.jpg" class="w-full h-full object-cover" /> -->
+									<div class="w-full h-full bg-gradient-to-br from-base-300 to-base-100 flex items-end p-8">
+										<p class="section-label text-base-content/30">Architect Portrait</p>
+									</div>
+								</div>
+								<!-- Decorative offset border -->
+								<div class="absolute -bottom-4 -right-4 w-full max-w-md aspect-[3/4] border border-primary/30 -z-10"></div>
+							</div>
+
+							<!-- Right: text -->
+							<div>
+								<p class="section-label mb-6 fade-up">About the Studio</p>
+								<h2 class="display-text text-5xl md:text-7xl mb-8 fade-up" style="transition-delay:0.1s">
+									BUILT ON<br/>
+									<span class="text-primary">INTENT</span>
+								</h2>
+								<div class="space-y-4 font-body font-light text-base-content/60 leading-relaxed fade-up" style="transition-delay:0.2s">
+									<p>
+									Studio Varga was founded on a single premise: every structure should have a reason to exist beyond shelter. We approach each project as a conversation between material, light, and the people who will inhabit the space.
+									</p>
+									<p>
+									Based in Madrid, we work across residential, commercial, and cultural typologies. Our process is obsessively iterative — we refine until the building feels inevitable.
+									</p>
+								</div>
+								<div class="mt-10 flex gap-8 fade-up" style="transition-delay:0.3s">
+									<div>
+										<div class="stat-number text-4xl text-primary">MA</div>
+										<div class="section-label text-base-content/40 mt-1">Architecture<br/>Madrid</div>
+									</div>
+									<div class="w-px bg-base-300"></div>
+									<div>
+										<div class="stat-number text-4xl text-primary">ETH</div>
+										<div class="section-label text-base-content/40 mt-1">Exchange<br/>Zürich</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+
+					<!-- ═══════════════════════════════════════
+						SERVICES
+						════════════════════════════════════════ -->
+						<section id="services" class="py-24 px-8 md:px-16 border-t border-base-300">
+							<div class="mb-16">
+								<p class="section-label mb-3 fade-up">What We Do</p>
+								<h2 class="display-text text-6xl md:text-8xl fade-up" style="transition-delay:0.1s">SERVICES</h2>
+							</div>
+
+							<div class="divide-y divide-base-300">
+
+								<div class="grid md:grid-cols-3 gap-8 py-10 fade-up group">
+									<div class="section-label text-primary">01</div>
+									<div>
+										<h3 class="font-display text-3xl tracking-wider mb-3 group-hover:text-primary transition-colors">Architectural Design</h3>
+										<p class="font-body font-light text-base-content/50 leading-relaxed text-sm">Full-scope design from concept through construction documentation. Residential, commercial, and cultural projects.</p>
+									</div>
+									<div class="hidden md:flex items-start justify-end">
+										<span class="section-label text-base-content/20 group-hover:text-primary transition-colors">→</span>
+									</div>
+								</div>
+
+								<div class="grid md:grid-cols-3 gap-8 py-10 fade-up group" style="transition-delay:0.1s">
+									<div class="section-label text-primary">02</div>
+									<div>
+										<h3 class="font-display text-3xl tracking-wider mb-3 group-hover:text-primary transition-colors">Interior Architecture</h3>
+										<p class="font-body font-light text-base-content/50 leading-relaxed text-sm">Spatial planning, material specification, and custom furniture design. The interior as extension of the architecture.</p>
+									</div>
+									<div class="hidden md:flex items-start justify-end">
+										<span class="section-label text-base-content/20 group-hover:text-primary transition-colors">→</span>
+									</div>
+								</div>
+
+								<div class="grid md:grid-cols-3 gap-8 py-10 fade-up group" style="transition-delay:0.2s">
+									<div class="section-label text-primary">03</div>
+									<div>
+										<h3 class="font-display text-3xl tracking-wider mb-3 group-hover:text-primary transition-colors">Urban Consultation</h3>
+										<p class="font-body font-light text-base-content/50 leading-relaxed text-sm">Strategic advisory for developers and municipalities. Masterplanning, feasibility, and contextual analysis.</p>
+									</div>
+									<div class="hidden md:flex items-start justify-end">
+										<span class="section-label text-base-content/20 group-hover:text-primary transition-colors">→</span>
+									</div>
+								</div>
+
+								<div class="grid md:grid-cols-3 gap-8 py-10 fade-up group" style="transition-delay:0.3s">
+									<div class="section-label text-primary">04</div>
+									<div>
+										<h3 class="font-display text-3xl tracking-wider mb-3 group-hover:text-primary transition-colors">Project Management</h3>
+										<p class="font-body font-light text-base-content/50 leading-relaxed text-sm">On-site supervision and contractor coordination. We ensure the built result matches the design intent.</p>
+									</div>
+									<div class="hidden md:flex items-start justify-end">
+										<span class="section-label text-base-content/20 group-hover:text-primary transition-colors">→</span>
+									</div>
+								</div>
+
+							</div>
+						</section>
+
+
+						<!-- ═══════════════════════════════════════
+							CONTACT
+							════════════════════════════════════════ -->
+							<section id="contact" class="py-24 px-8 md:px-16 border-t border-base-300">
+								<div class="grid md:grid-cols-2 gap-16 items-start">
+
+									<div>
+										<p class="section-label mb-6 fade-up">Get In Touch</p>
+										<h2 class="display-text text-6xl md:text-8xl mb-8 fade-up" style="transition-delay:0.1s">
+											LET'S<br/>
+											<span class="text-primary">BUILD</span><br/>
+											SOMETHING.
+										</h2>
+										<div class="space-y-4 font-body font-light text-base-content/50 fade-up" style="transition-delay:0.2s">
+											<p>studio@varga-architecture.com</p>
+											<p>+34 91 123 4567</p>
+											<p>Calle Gran Vía 42, Madrid, Spain</p>
+										</div>
+									</div>
+
+									<!-- Contact Form -->
+									<!-- Action points to Formspree - replace YOUR_FORM_ID with your actual Formspree endpoint -->
+									<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6 fade-up" style="transition-delay:0.2s">
+
+										<div class="form-control">
+											<label class="section-label mb-2 block">Your Name</label>
+											<input type="text" name="name" required
+													   class="input input-bordered rounded-none w-full bg-base-200 border-base-300 focus:border-primary focus:outline-none font-body font-light"
+													   placeholder="Full name" />
+										</div>
+
+										<div class="form-control">
+											<label class="section-label mb-2 block">Email</label>
+											<input type="email" name="email" required
+													    class="input input-bordered rounded-none w-full bg-base-200 border-base-300 focus:border-primary focus:outline-none font-body font-light"
+													    placeholder="your@email.com" />
+										</div>
+
+										<div class="form-control">
+											<label class="section-label mb-2 block">Project Type</label>
+											<select name="project_type"
+												class="select select-bordered rounded-none w-full bg-base-200 border-base-300 focus:border-primary focus:outline-none font-body font-light">
+												<option disabled selected>Select type</option>
+												<option>Residential</option>
+												<option>Commercial</option>
+												<option>Cultural</option>
+												<option>Consultation</option>
+												<option>Other</option>
+											</select>
+										</div>
+
+										<div class="form-control">
+											<label class="section-label mb-2 block">Message</label>
+											<textarea name="message" required rows="5"
+															  class="textarea textarea-bordered rounded-none w-full bg-base-200 border-base-300 focus:border-primary focus:outline-none font-body font-light resize-none"
+															  placeholder="Tell us about your project..."></textarea>
+										</div>
+
+										<button type="submit"
+											class="btn w-full rounded-none bg-primary text-base-100 hover:bg-accent border-none h-auto py-4 section-label tracking-widest">
+											Send Message →
+										</button>
+
+									</form>
+
+								</div>
+							</section>
+
+
+							<!-- ═══════════════════════════════════════
+								FOOTER
+								════════════════════════════════════════ -->
+								<footer class="border-t border-base-300 px-8 md:px-16 py-10">
+									<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+
+										<div class="font-display text-2xl tracking-widest text-primary">VARGA</div>
+
+										<div class="flex gap-8 section-label text-base-content/30">
+											<a href="#work" class="hover:text-primary transition-colors">Work</a>
+											<a href="#about" class="hover:text-primary transition-colors">About</a>
+											<a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+										</div>
+
+										<div class="section-label text-base-content/20">
+											© 2024 Studio Varga. All rights reserved.
+										</div>
+
+									</div>
+								</footer>
+
+
+								<script type="module" src="/src/main.js"></script>
+</body>
+</html>
