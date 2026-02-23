@@ -15,15 +15,15 @@
   name: architect;
   default: true;
   color-scheme: dark;
-  --color-primary: #7FA5C7;
-  --color-primary-content: #1a1d23;
-  --color-secondary: #4a6d8c;
-  --color-accent: #7FA5C7;
-  --color-neutral: #252930;
-  --color-base-100: #1a1d23;
-  --color-base-200: #1e2128;
-  --color-base-300: #252930;
-  --color-base-content: #e8f1f8;
+  --color-primary: #90B1CD;
+  --color-primary-content: #15191F;
+  --color-secondary: #6a91b0;
+  --color-accent: #90B1CD;
+  --color-neutral: #1e2329;
+  --color-base-100: #15191F;
+  --color-base-200: #1a1f26;
+  --color-base-300: #1f252d;
+  --color-base-content: #E3EDF8;
 }
 
 @layer base {
@@ -100,6 +100,10 @@ body::after {
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#navbar .btn {
+	--btn-noise: none !important;
 }
 
 /* Nav link underline */
