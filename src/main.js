@@ -32,6 +32,12 @@ menuBtn?.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden')
 })
 
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden')
+  })
+})
+
 // Navbar hide on scroll down, show on scroll up
 let lastScroll = 0
 const navbar = document.getElementById('navbar')

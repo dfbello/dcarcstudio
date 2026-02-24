@@ -21,17 +21,17 @@
 	<body class="overflow-x-hidden">
 
 		<!-- Custom Cursor -->
-		<div id="cursor"></div>
+		<div id="cursor" class="hidden md:block"></div>
 
 		<!-- ═══════════════════════════════════════
 			NAVBAR
 			════════════════════════════════════════ -->
 			<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-base-100/40 backdrop-blur-md transition-transform duration-300">
-				<div class="flex items-center justify-between px-8 py-6">
+				<div class="flex items-center justify-between px-4 py-3 md:px-8 md:py-6">
 
 					<!-- Logo -->
 					<a href="#">
-						<img src="/public/images/DCAS-LOGO1W.png" alt="Diego Cadena Architecture Studio" class="h-13 w-auto -my-4 " />
+						<img src="/public/images/DCAS-LOGO1W.png" alt="Diego Cadena Architecture Studio" class="h-9 md:h-13 w-auto -my-4 " />
 					</a>
 
 					<!-- Desktop Nav -->
@@ -58,10 +58,10 @@
 
 				<!-- Mobile Menu -->
 				<div id="mobile-menu" class="hidden md:hidden bg-base-200 border-t border-base-300 px-8 py-6 flex flex-col gap-6 section-label">
-					<a href="#work" class="hover:text-primary transition-colors">Work</a>
-					<a href="#about" class="hover:text-primary transition-colors">About</a>
-					<a href="#services" class="hover:text-primary transition-colors">Services</a>
-					<a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+					<a href="#work" class="hover:text-primary transition-colors">Proyectos</a>
+					<a href="#about" class="hover:text-primary transition-colors">Conózcame</a>
+					<a href="#services" class="hover:text-primary transition-colors">Servicios</a>
+					<a href="#contact" class="hover:text-primary transition-colors">Contacto</a>
 				</div>
 			</nav>
 
@@ -80,7 +80,7 @@
 
 					<!-- Hero content -->
 					<div class="relative z-10 max-w-6xl">
-						<h1 class="display-text text-9xl text-base-content mb-8 fade-up" style="transition-delay: 0.1s">
+						<h1 class="display-text text-6xl md:text-9xl text-base-content mb-8 fade-up" style="transition-delay: 0.1s">
 							ARQUITECTURA<br/>
 							QUE<br/>
 							<span class="text-primary">TRASCIENDE</span><br/>
@@ -98,16 +98,16 @@
 					<!-- Stats bar -->
 					<div class="relative z-10 mt-20 pt-8 border-t border-base-300 grid grid-cols-3 gap-8 max-w-2xl">
 						<div class="fade-up" style="transition-delay: 0.3s">
-							<div class="stat-number text-5xl text-primary">6</div>
-							<div class="section-label mt-1 text-base-content/50">Años de Experiencia</div>
+							<div class="stat-number text-3xl md:text-5xl text-primary">6</div>
+							<div class="section-label mt-1 text-base-content/50 text-[6px] md:text-xs">Años de Experiencia</div>
 						</div>
 						<div class="fade-up" style="transition-delay: 0.4s">
-							<div class="stat-number text-5xl text-primary">+25</div>
-							<div class="section-label mt-1 text-base-content/50">Proyectos Arquitectónicos</div>
+							<div class="stat-number text-3xl md:text-5xl text-primary">+25</div>
+							<div class="section-label mt-1 text-base-content/50 text-[6px] md:text-xs">Proyectos Arquitectónicos</div>
 						</div>
 						<div class="fade-up" style="transition-delay: 0.5s">
-							<div class="stat-number text-5xl text-primary">+30.000</div>
-							<div class="section-label mt-1 text-base-content/50">m² Diseñados</div>
+							<div class="stat-number text-3xl md:text-5xl text-primary">+30.000</div>
+							<div class="section-label mt-1 text-base-content/50 text-[6px] md:text-xs">m² Diseñados</div>
 						</div>
 					</div>
 				</section>
@@ -833,19 +833,19 @@
 					<!-- ═══════════════════════════════════════
 						ABOUT
 						════════════════════════════════════════ -->
-						<section id="about" class="py-24 px-8 md:px-16 border-t border-base-300">
-							<div class="grid md:grid-cols-2 gap-16 md:gap-32 items-center">
+						<section id="about" class="py-16 px-4 md:py-24 md:px-16 border-t border-base-300 ">
+							<div class="md:grid md:grid-cols-2 gap-8 md:gap-32 items-center">
 <!-- Left: image -->
 <div class="relative fade-up">
-  <figure class="hover-gallery max-w-md">
+  <figure class="hover-gallery w-full max-w-md">
     <img src="https://img.daisyui.com/images/stock/daisyui-hat-1.webp" />
     <img src="https://img.daisyui.com/images/stock/daisyui-hat-2.webp" />
     <img src="https://img.daisyui.com/images/stock/daisyui-hat-3.webp" />
     <img src="https://img.daisyui.com/images/stock/daisyui-hat-4.webp" />
   </figure>
-  <p class="section-label text-base-content/30 mt-4">Diego Cadena</p>
+  <p class="hidden md:block section-label text-base-content/30 mt-4">Diego Cadena</p>
   <!-- Decorative offset border -->
-  <div class="absolute -bottom-4 -right-4 w-full max-w-md aspect-[3/4] border border-primary/30 -z-10"></div>
+  <div class="hidden md:block absolute -bottom-4 -right-4 w-full max-w-md aspect-[3/4] border border-primary/30 -z-10"></div>
 </div>
 
 								<!-- Right: text -->
@@ -915,7 +915,7 @@
   Ofrecemos soluciones integrales de diseño que transforman la visión en realidad construida, combinando experiencia técnica con innovación creativa en múltiples disciplinas. Cada proyecto se aborda con precisión, creatividad y compromiso con la excelencia.
 </p>
 								</div>
-								<div class="grid grid-cols-2 gap-16">
+								<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
 
 									<div class="group relative fade-up">
 										<div class="font-display text-[10rem] leading-none text-base-300 absolute -top-8 -left-4 select-none">01</div>
@@ -982,19 +982,19 @@
 								CONTACT
 								════════════════════════════════════════ -->
 								<section id="contact" class="py-24 px-8 md:px-16 border-t border-base-300">
-									<div class="grid md:grid-cols-2 gap-16 items-start">
+									<div class="md:grid md:grid-cols-2 gap-16 items-start">
 
 										<div>
 											<p class="section-label mb-6 fade-up">Contáctenos</p>
-											<h2 class="display-text text-6xl md:text-8xl mb-8 fade-up" style="transition-delay:0.1s">
+											<h2 class="display-text text-5xl md:text-8xl mb-8 fade-up" style="transition-delay:0.1s">
 												CONSTRUYAMOS<br/>
 												ALGO<br/>
 												<span class="text-primary">JUNTOS</span><br/>
 											</h2>
-											<div class="grid grid-cols-2 gap-6">
+											<div class="grid md:grid-cols-2 gap-6">
 
 												<div class="flex flex-col items-center gap-3">
-													<a href="https://wa.me/573143867876" target="_blank" rel="noopener noreferrer" class="border border-base-300 hover:border-primary p-4 flex flex-col items-center justify-center gap-4 group w-full transition-colors">
+													<a href="https://wa.me/573143867876" target="_blank" rel="noopener noreferrer" class="border border-base-300 hover:border-primary p-4 flex md:flex-col items-center justify-center gap-4 group w-full transition-colors">
 														<i data-lucide="message-circle" class="w-8 h-8 text-primary"></i>
 														<span class="section-label">WHATSAPP</span>
 													</a>
@@ -1003,7 +1003,7 @@
 
 												<div class="flex flex-col items-center gap-3">
 													<a href="tel:+573143867876"
-													   class="border border-base-300 hover:border-primary p-4 flex flex-col items-center justify-center gap-4 group w-full transition-colors">
+													   class="border border-base-300 hover:border-primary p-4 flex md:flex-col items-center justify-center gap-4 group w-full transition-colors">
 														<i data-lucide="phone" class="w-8 h-8 text-primary"></i>
 														<span class="section-label">TELÉFONO</span>
 													</a>
@@ -1012,7 +1012,7 @@
 
 												<div class="flex flex-col items-center gap-3">
 													<a href="mailto:dcarcstudio@gmail.com"
-													   class="border border-base-300 hover:border-primary p-4 flex flex-col items-center justify-center gap-4 group w-full transition-colors">
+													   class="border border-base-300 hover:border-primary p-4 flex md:flex-col items-center justify-center gap-4 group w-full transition-colors">
 														<i data-lucide="mail" class="w-8 h-8 text-primary"></i>
 														<span class="section-label">EMAIL</span>
 													</a>
@@ -1020,8 +1020,7 @@
 												</div>
 
 												<div class="flex flex-col items-center gap-3">
-													<a href="https://instagram.com/dcarcstudio" target="_blank" rel="noopener noreferrer"
-																				    class="border border-base-300 hover:border-primary p-4 flex flex-col items-center justify-center gap-4 group w-full transition-colors">
+													<a href="https://instagram.com/dcarcstudio" target="_blank" rel="noopener noreferrer" class="border border-base-300 hover:border-primary p-4 flex md:flex-col items-center justify-center gap-4 group w-full transition-colors">
 														<i data-lucide="instagram" class="w-8 h-8 text-primary"></i>
 														<span class="section-label">INSTAGRAM</span>
 													</a>
@@ -1088,13 +1087,13 @@
 
 											<!-- Logo -->
 											<a href="#">
-												<img src="/public/images/DCAS-LOGO1W.png" alt="Diego Cadena Architecture Studio" class="h-13 w-auto -my-4 " />
+												<img src="/public/images/DCAS-LOGO1W.png" alt="Diego Cadena Architecture Studio" class="h-9 md:h-13 w-auto -my-4 " />
 											</a>
 
 											<div class="flex gap-8 section-label text-base-content/30">
 											</div>
 
-											<div class="section-label text-base-content/20 ml-auto">
+											<div class="section-label text-base-content/20 ml-auto text-[8px] md:text-xs">
 												© 2026 DIEGO CADENA ESTUDIO DE ARQUITECTURA. TODOS LOS DERECHOS RESERVADOS.
 											</div>
 

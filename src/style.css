@@ -30,14 +30,15 @@
   html {
     scroll-behavior: smooth;
   }
+  @media (min-width: 768px) {
+	  body {
+		  @apply font-body bg-base-100 text-base-content;
+		  cursor: none;
+	  }
 
-  body {
-    @apply font-body bg-base-100 text-base-content;
-    cursor: none;
-  }
-
-  * {
-    cursor: none !important;
+	  * {
+		  cursor: none !important;
+	  }
   }
 }
 
