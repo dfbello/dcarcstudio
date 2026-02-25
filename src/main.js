@@ -80,4 +80,11 @@ if (slider) {
   })
 }
 
-const lightbox = GLightbox({ selector: '.glightbox' });
+const lightbox = GLightbox({
+  selector: '.glightbox',
+  touchNavigation: true,
+  closeEffect: 'fade',
+  openEffect: 'fade',
+  moreText: 'Ver más...',
+  lessText: 'Ver menos',
+});
